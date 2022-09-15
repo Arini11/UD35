@@ -8,3 +8,16 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'UD35';
 }
+
+export interface Cliente {
+  id: number;
+  nombre: string;
+  cif: string;
+  direccion: string;
+  grupo: number;
+}
+
+export interface Grupo {
+  id: number;
+  nombre: string;
+}
