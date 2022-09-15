@@ -14,9 +14,12 @@
 <p>
   <span>Grupo:</span>
   <select [(ngModel)]="cliente.grupo">
-    <option *ngFor="let grupo of grupos" value="{{grupo.id}}">{{grupo.nombre}}</option>
+    <option selected>Sin definir</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
   </select>
 </p>
 <p>
-  <button (click)="this.nuevoCliente()">Guardar</button>
+  <button (click)="saveClient()">Guardar</button>
 </p>
+<app-listado-clientes [dades]="dades"></app-listado-clientes>

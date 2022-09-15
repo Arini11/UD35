@@ -1,19 +1,22 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { AltaClienteComponent } from './alta-cliente/alta-cliente.component';
+import { AltaClienteComponent } from './components-ex1/alta-cliente/alta-cliente.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ClientesService } from './clientes.service';
-import { ListadoClientesComponent } from './listado-clientes/listado-clientes.component';
+import { ListadoClientesComponent } from './components-ex1/listado-clientes/listado-clientes.component';
+import { FormularioComponent } from './components-ex2/formulario/formulario.component';
+import { MostrarDatosComponent } from './components-ex2/mostrar-datos/mostrar-datos.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     AltaClienteComponent,
-    ListadoClientesComponent
+    ListadoClientesComponent,
+    FormularioComponent,
+    MostrarDatosComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +27,7 @@ import { ListadoClientesComponent } from './listado-clientes/listado-clientes.co
     AltaClienteComponent,
     ListadoClientesComponent
   ],
-  providers: [ClientesService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
